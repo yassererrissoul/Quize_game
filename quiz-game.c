@@ -32,7 +32,7 @@ int main ()
     printf("2: '2'\n");
     printf("3: '4'\n");
     printf("YOU : ");
-        scanf(" %d", &player);
+        scanf(" %ld", &player);
     if (player == 1 || player == 2)
     {
     printf(ANSI_COLOR_RED       "// WRONG //"     ANSI_COLOR_RESET "\n");
@@ -49,7 +49,7 @@ int main ()
     printf("2: 292832839\n");
     printf("3: Skip\n");
     printf("YOU :  ");
-        scanf(" %d", &player1);
+        scanf(" %ld", &player1);
     if (player1 == 2 || player1 == 3)
     {
     printf(ANSI_COLOR_RED       "// WRONG //"     ANSI_COLOR_RESET "\n");
@@ -66,7 +66,7 @@ int main ()
     printf("2: No\n");
     printf("3: Maybe\n");
     printf("YOU :");
-        scanf(" %d", &player2);
+        scanf(" %ld", &player2);
     if (player2 == 1 || player2 == 2 || player2 == 3)
     {
     printf(ANSI_COLOR_GREEN     "// CORRECT //"   ANSI_COLOR_RESET "\n");
@@ -79,7 +79,7 @@ int main ()
     printf("2: No\n");
     printf("3: Fuck u\n");
     printf("YOU :");
-        scanf(" %d", &player3);
+        scanf(" %ld", &player3);
       if (player3 == 2)
     {
     printf(ANSI_COLOR_RED       "// WRONG //"     ANSI_COLOR_RESET "\n");
@@ -93,18 +93,18 @@ int main ()
     printf("//Type the correct answer://\n");
     printf("To continue type ur number (hihihi)\n");
     printf("YOU :06");
-        scanf(" %d", &number);
+        scanf(" %ld", &number);
     if (number > 0)
     {
         int i,j;
         for (int i = 1; i <= 50; i++)
         {
+            sleep(1);
             printf("\r");
             printf("[");
         
         for (int j = 1; j <= i; j++)
         {
-            sleep(0.99);
             printf("|");
         }
         
@@ -121,7 +121,7 @@ int main ()
     printf("2: Yes\n");
     printf("3: Yes\n");
     printf("YOU :");
-        scanf(" %d", &die);
+        scanf(" %ld", &die);
      if (die == 1 || die == 3 || die == 2)
     {
     printf(ANSI_COLOR_GREEN     "// CORRECT //"   ANSI_COLOR_RESET "\n");
@@ -141,10 +141,10 @@ int main ()
     printf("//Type the correct answer://\n");
     printf("//Let's be honest, you're gay, right?\n");
     printf("YOU :");
-        scanf(" %s", &typ);
+        scanf(" %s", typ);
     printf("\n-----------------------------\n");
     printf("Do not lie to me bro:");
-        scanf(" %s", &typ1);
+        scanf(" %s", typ1);
     printf("I won't tell anywone, don't be afraid: ok I'm gay u got me \n");
         sleep(6);
     printf("I'm glad you talked to me openly\n");
@@ -166,7 +166,7 @@ int main ()
     printf("2: Two gay niggas kissing \n");
     printf("3: nothing\n");
     printf("YOU :");
-        scanf(" %d", &negges);
+        scanf(" %ld", &negges);
         if (negges == 3)
     {
     printf(ANSI_COLOR_RED       "// WRONG //"     ANSI_COLOR_RESET "\n");
@@ -180,26 +180,26 @@ int main ()
     printf("//Type the correct answer://\n");
     printf("// What is your best friend's name ?\n");
     printf("YOU :");
-        scanf(" %s", &yasser);
+        scanf(" %s", yasser);
     if(strcmp(yasser,code) == 0 )
     {
         sleep(1);
     printf("THX BRO ;)\n");
     }
-    else if (strcmp(yasser,code) == -1 || strcmp(yasser,code) < 0)
+    else if (strcmp(yasser,code) < 0)
     {
         sleep(1);
     printf("You mean Yasser right :)\n");
     }
         sleep(1);
     printf("So You did it man, congratualtions.\n");
-        sleep(0.99);
+        sleep(1);
     printf("Do you want to replay the game (y/n): ");
-        scanf(" %c", &yesno);
+        scanf(" %c", yesno);
     if (yesno == 'n' || yesno == 'N')
         {
             printf("                                    //Fuck//\n");
-                sleep(0.99);
+                sleep(1);
             return 0;
         }
      }while ( yesno == 'y' || yesno == 'Y');
