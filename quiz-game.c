@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <Windows.h>
 #include <string.h>
 
 #define ANSI_COLOR_RED     "\x1b[31m"
